@@ -8,3 +8,5 @@ node_modules
 .harness/harness.db-shm
 .harness/harness.db-wal
 .harness/current.md
+
+graphify-out/cache/ast

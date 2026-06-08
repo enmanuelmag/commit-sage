@@ -1,0 +1,2177 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "agent-harness-kit.config.ts",
+      "file_type": "code",
+      "source_file": "agent-harness-kit.config.ts",
+      "source_location": "L1",
+      "id": "agent_harness_kit_config_ts",
+      "community": 7,
+      "norm_label": "agent-harness-kit.config.ts"
+    },
+    {
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "id": "eslint_config_mjs",
+      "community": 8,
+      "norm_label": "eslint.config.mjs"
+    },
+    {
+      "label": "extension.ts",
+      "file_type": "code",
+      "source_file": "src/extension.ts",
+      "source_location": "L1",
+      "id": "src_extension_ts",
+      "community": 3,
+      "norm_label": "extension.ts"
+    },
+    {
+      "label": "executeWithProgress()",
+      "file_type": "code",
+      "source_file": "src/extension.ts",
+      "source_location": "L10",
+      "id": "src_extension_executewithprogress",
+      "community": 3,
+      "norm_label": "executewithprogress()"
+    },
+    {
+      "label": "activate()",
+      "file_type": "code",
+      "source_file": "src/extension.ts",
+      "source_location": "L30",
+      "id": "src_extension_activate",
+      "community": 3,
+      "norm_label": "activate()"
+    },
+    {
+      "label": "deactivate()",
+      "file_type": "code",
+      "source_file": "src/extension.ts",
+      "source_location": "L138",
+      "id": "src_extension_deactivate",
+      "community": 3,
+      "norm_label": "deactivate()"
+    },
+    {
+      "label": "type.ts",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L1",
+      "id": "src_type_ts",
+      "community": 0,
+      "norm_label": "type.ts"
+    },
+    {
+      "label": "ApiUrl",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L1",
+      "id": "src_type_apiurl",
+      "community": 0,
+      "norm_label": "apiurl"
+    },
+    {
+      "label": "ModelId",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L3",
+      "id": "src_type_modelid",
+      "community": 0,
+      "norm_label": "modelid"
+    },
+    {
+      "label": "ApiKey",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L5",
+      "id": "src_type_apikey",
+      "community": 0,
+      "norm_label": "apikey"
+    },
+    {
+      "label": "MaxDiffSize",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L7",
+      "id": "src_type_maxdiffsize",
+      "community": 0,
+      "norm_label": "maxdiffsize"
+    },
+    {
+      "label": "ApiType",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L9",
+      "id": "src_type_apitype",
+      "community": 1,
+      "norm_label": "apitype"
+    },
+    {
+      "label": "Token",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L15",
+      "id": "src_type_token",
+      "community": 0,
+      "norm_label": "token"
+    },
+    {
+      "label": "MaxNewTokens",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L17",
+      "id": "src_type_maxnewtokens",
+      "community": 0,
+      "norm_label": "maxnewtokens"
+    },
+    {
+      "label": "Temperature",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L19",
+      "id": "src_type_temperature",
+      "community": 0,
+      "norm_label": "temperature"
+    },
+    {
+      "label": "ProviderConfig",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L21",
+      "id": "src_type_providerconfig",
+      "community": 1,
+      "norm_label": "providerconfig"
+    },
+    {
+      "label": "CommitSageConfig",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L30",
+      "id": "src_type_commitsageconfig",
+      "community": 3,
+      "norm_label": "commitsageconfig"
+    },
+    {
+      "label": "Git",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L45",
+      "id": "src_type_git",
+      "community": 0,
+      "norm_label": "git"
+    },
+    {
+      "label": "InputBox",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L49",
+      "id": "src_type_inputbox",
+      "community": 0,
+      "norm_label": "inputbox"
+    },
+    {
+      "label": "ForcePushMode",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L53",
+      "id": "src_type_forcepushmode",
+      "community": 0,
+      "norm_label": "forcepushmode"
+    },
+    {
+      "label": "RefType",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L59",
+      "id": "src_type_reftype",
+      "community": 0,
+      "norm_label": "reftype"
+    },
+    {
+      "label": "Ref",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L65",
+      "id": "src_type_ref",
+      "community": 0,
+      "norm_label": "ref"
+    },
+    {
+      "label": "UpstreamRef",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L73",
+      "id": "src_type_upstreamref",
+      "community": 0,
+      "norm_label": "upstreamref"
+    },
+    {
+      "label": "Branch",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L79",
+      "id": "src_type_branch",
+      "community": 0,
+      "norm_label": "branch"
+    },
+    {
+      "label": "CommitShortStat",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L85",
+      "id": "src_type_commitshortstat",
+      "community": 0,
+      "norm_label": "commitshortstat"
+    },
+    {
+      "label": "Commit",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L91",
+      "id": "src_type_commit",
+      "community": 0,
+      "norm_label": "commit"
+    },
+    {
+      "label": "Submodule",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L102",
+      "id": "src_type_submodule",
+      "community": 0,
+      "norm_label": "submodule"
+    },
+    {
+      "label": "Remote",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L108",
+      "id": "src_type_remote",
+      "community": 0,
+      "norm_label": "remote"
+    },
+    {
+      "label": "Worktree",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L115",
+      "id": "src_type_worktree",
+      "community": 0,
+      "norm_label": "worktree"
+    },
+    {
+      "label": "Status",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L123",
+      "id": "src_type_status",
+      "community": 2,
+      "norm_label": "status"
+    },
+    {
+      "label": "StatusType",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L147",
+      "id": "src_type_statustype",
+      "community": 2,
+      "norm_label": "statustype"
+    },
+    {
+      "label": "ChangeWithDiffModified",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L149",
+      "id": "src_type_changewithdiffmodified",
+      "community": 0,
+      "norm_label": "changewithdiffmodified"
+    },
+    {
+      "label": "ChangeWithDiffOther",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L155",
+      "id": "src_type_changewithdiffother",
+      "community": 0,
+      "norm_label": "changewithdiffother"
+    },
+    {
+      "label": "ChangeWithDiff",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L160",
+      "id": "src_type_changewithdiff",
+      "community": 2,
+      "norm_label": "changewithdiff"
+    },
+    {
+      "label": "Change",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L162",
+      "id": "src_type_change",
+      "community": 2,
+      "norm_label": "change"
+    },
+    {
+      "label": "DiffChange",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L175",
+      "id": "src_type_diffchange",
+      "community": 0,
+      "norm_label": "diffchange"
+    },
+    {
+      "label": "RepositoryKind",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L180",
+      "id": "src_type_repositorykind",
+      "community": 0,
+      "norm_label": "repositorykind"
+    },
+    {
+      "label": "RepositoryState",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L182",
+      "id": "src_type_repositorystate",
+      "community": 0,
+      "norm_label": "repositorystate"
+    },
+    {
+      "label": "RepositoryUIState",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L198",
+      "id": "src_type_repositoryuistate",
+      "community": 0,
+      "norm_label": "repositoryuistate"
+    },
+    {
+      "label": "RepositoryAccessDetails",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L203",
+      "id": "src_type_repositoryaccessdetails",
+      "community": 0,
+      "norm_label": "repositoryaccessdetails"
+    },
+    {
+      "label": "LogOptions",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L211",
+      "id": "src_type_logoptions",
+      "community": 0,
+      "norm_label": "logoptions"
+    },
+    {
+      "label": "CommitOptions",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L227",
+      "id": "src_type_commitoptions",
+      "community": 0,
+      "norm_label": "commitoptions"
+    },
+    {
+      "label": "FetchOptions",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L251",
+      "id": "src_type_fetchoptions",
+      "community": 0,
+      "norm_label": "fetchoptions"
+    },
+    {
+      "label": "InitOptions",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L259",
+      "id": "src_type_initoptions",
+      "community": 0,
+      "norm_label": "initoptions"
+    },
+    {
+      "label": "CloneOptions",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L263",
+      "id": "src_type_cloneoptions",
+      "community": 0,
+      "norm_label": "cloneoptions"
+    },
+    {
+      "label": "RefQuery",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L276",
+      "id": "src_type_refquery",
+      "community": 0,
+      "norm_label": "refquery"
+    },
+    {
+      "label": "BranchQuery",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L283",
+      "id": "src_type_branchquery",
+      "community": 0,
+      "norm_label": "branchquery"
+    },
+    {
+      "label": "Repository",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L287",
+      "id": "src_type_repository",
+      "community": 2,
+      "norm_label": "repository"
+    },
+    {
+      "label": "RemoteSource",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L388",
+      "id": "src_type_remotesource",
+      "community": 0,
+      "norm_label": "remotesource"
+    },
+    {
+      "label": "RemoteSourceProvider",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L394",
+      "id": "src_type_remotesourceprovider",
+      "community": 0,
+      "norm_label": "remotesourceprovider"
+    },
+    {
+      "label": "RemoteSourcePublisher",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L403",
+      "id": "src_type_remotesourcepublisher",
+      "community": 0,
+      "norm_label": "remotesourcepublisher"
+    },
+    {
+      "label": "Credentials",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L409",
+      "id": "src_type_credentials",
+      "community": 0,
+      "norm_label": "credentials"
+    },
+    {
+      "label": "CredentialsProvider",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L414",
+      "id": "src_type_credentialsprovider",
+      "community": 0,
+      "norm_label": "credentialsprovider"
+    },
+    {
+      "label": "PostCommitCommandsProvider",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L418",
+      "id": "src_type_postcommitcommandsprovider",
+      "community": 0,
+      "norm_label": "postcommitcommandsprovider"
+    },
+    {
+      "label": "PushErrorHandler",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L422",
+      "id": "src_type_pusherrorhandler",
+      "community": 0,
+      "norm_label": "pusherrorhandler"
+    },
+    {
+      "label": "BranchProtection",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L426",
+      "id": "src_type_branchprotection",
+      "community": 0,
+      "norm_label": "branchprotection"
+    },
+    {
+      "label": "BranchProtectionRule",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L431",
+      "id": "src_type_branchprotectionrule",
+      "community": 0,
+      "norm_label": "branchprotectionrule"
+    },
+    {
+      "label": "BranchProtectionProvider",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L436",
+      "id": "src_type_branchprotectionprovider",
+      "community": 0,
+      "norm_label": "branchprotectionprovider"
+    },
+    {
+      "label": "AvatarQueryCommit",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L441",
+      "id": "src_type_avatarquerycommit",
+      "community": 0,
+      "norm_label": "avatarquerycommit"
+    },
+    {
+      "label": "AvatarQuery",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L447",
+      "id": "src_type_avatarquery",
+      "community": 0,
+      "norm_label": "avatarquery"
+    },
+    {
+      "label": "SourceControlHistoryItemDetailsProvider",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L452",
+      "id": "src_type_sourcecontrolhistoryitemdetailsprovider",
+      "community": 0,
+      "norm_label": "sourcecontrolhistoryitemdetailsprovider"
+    },
+    {
+      "label": "APIState",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L458",
+      "id": "src_type_apistate",
+      "community": 0,
+      "norm_label": "apistate"
+    },
+    {
+      "label": "PublishEvent",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L460",
+      "id": "src_type_publishevent",
+      "community": 0,
+      "norm_label": "publishevent"
+    },
+    {
+      "label": "API",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L465",
+      "id": "src_type_api",
+      "community": 0,
+      "norm_label": "api"
+    },
+    {
+      "label": "GitExtension",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L497",
+      "id": "src_type_gitextension",
+      "community": 3,
+      "norm_label": "gitextension"
+    },
+    {
+      "label": "GitErrorCodes",
+      "file_type": "code",
+      "source_file": "src/type.ts",
+      "source_location": "L515",
+      "id": "src_type_giterrorcodes",
+      "community": 0,
+      "norm_label": "giterrorcodes"
+    },
+    {
+      "label": "config.ts",
+      "file_type": "code",
+      "source_file": "src/config.ts",
+      "source_location": "L1",
+      "id": "src_config_ts",
+      "community": 3,
+      "norm_label": "config.ts"
+    },
+    {
+      "label": "getConfig()",
+      "file_type": "code",
+      "source_file": "src/config.ts",
+      "source_location": "L5",
+      "id": "src_config_getconfig",
+      "community": 3,
+      "norm_label": "getconfig()"
+    },
+    {
+      "label": "extension.test.ts",
+      "file_type": "code",
+      "source_file": "src/test/extension.test.ts",
+      "source_location": "L1",
+      "id": "src_test_extension_test_ts",
+      "community": 9,
+      "norm_label": "extension.test.ts"
+    },
+    {
+      "label": "PromptBuilder.ts",
+      "file_type": "code",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L1",
+      "id": "src_api_promptbuilder_ts",
+      "community": 2,
+      "norm_label": "promptbuilder.ts"
+    },
+    {
+      "label": "PromptBuilder",
+      "file_type": "code",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L32",
+      "id": "api_promptbuilder_promptbuilder",
+      "community": 2,
+      "norm_label": "promptbuilder"
+    },
+    {
+      "label": ".getSystemPrompt()",
+      "file_type": "code",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L34",
+      "id": "api_promptbuilder_promptbuilder_getsystemprompt",
+      "community": 2,
+      "norm_label": ".getsystemprompt()"
+    },
+    {
+      "label": ".buildPrompt()",
+      "file_type": "code",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L54",
+      "id": "api_promptbuilder_promptbuilder_buildprompt",
+      "community": 2,
+      "norm_label": ".buildprompt()"
+    },
+    {
+      "label": "ProviderFactory.ts",
+      "file_type": "code",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L1",
+      "id": "src_api_providerfactory_ts",
+      "community": 1,
+      "norm_label": "providerfactory.ts"
+    },
+    {
+      "label": "ProviderFactory",
+      "file_type": "code",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L7",
+      "id": "api_providerfactory_providerfactory",
+      "community": 1,
+      "norm_label": "providerfactory"
+    },
+    {
+      "label": ".createProvider()",
+      "file_type": "code",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L8",
+      "id": "api_providerfactory_providerfactory_createprovider",
+      "community": 1,
+      "norm_label": ".createprovider()"
+    },
+    {
+      "label": "Ollama.ts",
+      "file_type": "code",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L1",
+      "id": "src_api_providers_ollama_ts",
+      "community": 1,
+      "norm_label": "ollama.ts"
+    },
+    {
+      "label": "Ollama",
+      "file_type": "code",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L8",
+      "id": "providers_ollama_ollama",
+      "community": 4,
+      "norm_label": "ollama"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L11",
+      "id": "providers_ollama_ollama_constructor",
+      "community": 4,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".getInstance()",
+      "file_type": "code",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L13",
+      "id": "providers_ollama_ollama_getinstance",
+      "community": 4,
+      "norm_label": ".getinstance()"
+    },
+    {
+      "label": ".buildRequest()",
+      "file_type": "code",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L20",
+      "id": "providers_ollama_ollama_buildrequest",
+      "community": 4,
+      "norm_label": ".buildrequest()"
+    },
+    {
+      "label": ".generateCommitMessage()",
+      "file_type": "code",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L44",
+      "id": "providers_ollama_ollama_generatecommitmessage",
+      "community": 4,
+      "norm_label": ".generatecommitmessage()"
+    },
+    {
+      "label": "Anthropic.ts",
+      "file_type": "code",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L1",
+      "id": "src_api_providers_anthropic_ts",
+      "community": 1,
+      "norm_label": "anthropic.ts"
+    },
+    {
+      "label": "AnthropicProvider",
+      "file_type": "code",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L8",
+      "id": "providers_anthropic_anthropicprovider",
+      "community": 5,
+      "norm_label": "anthropicprovider"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L11",
+      "id": "providers_anthropic_anthropicprovider_constructor",
+      "community": 5,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".getInstance()",
+      "file_type": "code",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L13",
+      "id": "providers_anthropic_anthropicprovider_getinstance",
+      "community": 5,
+      "norm_label": ".getinstance()"
+    },
+    {
+      "label": ".buildRequest()",
+      "file_type": "code",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L20",
+      "id": "providers_anthropic_anthropicprovider_buildrequest",
+      "community": 5,
+      "norm_label": ".buildrequest()"
+    },
+    {
+      "label": ".generateCommitMessage()",
+      "file_type": "code",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L44",
+      "id": "providers_anthropic_anthropicprovider_generatecommitmessage",
+      "community": 5,
+      "norm_label": ".generatecommitmessage()"
+    },
+    {
+      "label": "OpenAI.ts",
+      "file_type": "code",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L1",
+      "id": "src_api_providers_openai_ts",
+      "community": 1,
+      "norm_label": "openai.ts"
+    },
+    {
+      "label": "OpenAI",
+      "file_type": "code",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L8",
+      "id": "providers_openai_openai",
+      "community": 6,
+      "norm_label": "openai"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L11",
+      "id": "providers_openai_openai_constructor",
+      "community": 6,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".getInstance()",
+      "file_type": "code",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L13",
+      "id": "providers_openai_openai_getinstance",
+      "community": 6,
+      "norm_label": ".getinstance()"
+    },
+    {
+      "label": ".buildRequest()",
+      "file_type": "code",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L20",
+      "id": "providers_openai_openai_buildrequest",
+      "community": 6,
+      "norm_label": ".buildrequest()"
+    },
+    {
+      "label": ".generateCommitMessage()",
+      "file_type": "code",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L44",
+      "id": "providers_openai_openai_generatecommitmessage",
+      "community": 6,
+      "norm_label": ".generatecommitmessage()"
+    },
+    {
+      "label": "IProvider.ts",
+      "file_type": "code",
+      "source_file": "src/api/providers/IProvider.ts",
+      "source_location": "L1",
+      "id": "src_api_providers_iprovider_ts",
+      "community": 1,
+      "norm_label": "iprovider.ts"
+    },
+    {
+      "label": "IProvider",
+      "file_type": "code",
+      "source_file": "src/api/providers/IProvider.ts",
+      "source_location": "L4",
+      "id": "providers_iprovider_iprovider",
+      "community": 1,
+      "norm_label": "iprovider"
+    }
+  ],
+  "links": [
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_config_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_config_getconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_api_providerfactory_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_api_promptbuilder_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_type_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_type_gitextension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_extension_executewithprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_extension_activate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/extension.ts",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "src_extension_ts",
+      "target": "src_extension_deactivate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_apiurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_modelid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_apikey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_maxdiffsize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_apitype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_token",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_maxnewtokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_temperature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_providerconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_commitsageconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_git",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_inputbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_forcepushmode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_reftype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_ref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_upstreamref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_commitshortstat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_submodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_remote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_worktree",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_statustype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_changewithdiffmodified",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_changewithdiffother",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_changewithdiff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_diffchange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_repositorykind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_repositorystate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_repositoryuistate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_repositoryaccessdetails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L211",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_logoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_commitoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_fetchoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L259",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_initoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_cloneoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L276",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_refquery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L283",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_branchquery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_repository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L388",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_remotesource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L394",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_remotesourceprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L403",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_remotesourcepublisher",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L409",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_credentials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L414",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_credentialsprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L418",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_postcommitcommandsprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L422",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_pusherrorhandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L426",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_branchprotection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L431",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_branchprotectionrule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L436",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_branchprotectionprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L441",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_avatarquerycommit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L447",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_avatarquery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L452",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_sourcecontrolhistoryitemdetailsprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L458",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_apistate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L460",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_publishevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L465",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L497",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_gitextension",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/type.ts",
+      "source_location": "L515",
+      "weight": 1.0,
+      "source": "src_type_ts",
+      "target": "src_type_giterrorcodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_config_ts",
+      "target": "src_type_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_promptbuilder_ts",
+      "target": "src_type_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_providerfactory_ts",
+      "target": "src_type_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_api_providers_ollama_ts",
+      "target": "src_type_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_api_providers_anthropic_ts",
+      "target": "src_type_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_api_providers_openai_ts",
+      "target": "src_type_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/IProvider.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_api_providers_iprovider_ts",
+      "target": "src_type_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_providerfactory_ts",
+      "target": "src_type_apitype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_promptbuilder_ts",
+      "target": "src_type_providerconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_api_providers_ollama_ts",
+      "target": "src_type_providerconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_api_providers_anthropic_ts",
+      "target": "src_type_providerconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_api_providers_openai_ts",
+      "target": "src_type_providerconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/IProvider.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_api_providers_iprovider_ts",
+      "target": "src_type_providerconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_config_ts",
+      "target": "src_type_commitsageconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_promptbuilder_ts",
+      "target": "src_type_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_promptbuilder_ts",
+      "target": "src_type_statustype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_promptbuilder_ts",
+      "target": "src_type_changewithdiff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_promptbuilder_ts",
+      "target": "src_type_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_api_promptbuilder_ts",
+      "target": "src_type_repository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_config_ts",
+      "target": "src_config_getconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "src_api_promptbuilder_ts",
+      "target": "api_promptbuilder_promptbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_api_providers_ollama_ts",
+      "target": "src_api_promptbuilder_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_api_providers_anthropic_ts",
+      "target": "src_api_promptbuilder_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_api_providers_openai_ts",
+      "target": "src_api_promptbuilder_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "api_promptbuilder_promptbuilder",
+      "target": "api_promptbuilder_promptbuilder_getsystemprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/PromptBuilder.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "api_promptbuilder_promptbuilder",
+      "target": "api_promptbuilder_promptbuilder_buildprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_api_providerfactory_ts",
+      "target": "src_api_providers_anthropic_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_api_providerfactory_ts",
+      "target": "src_api_providers_iprovider_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_api_providerfactory_ts",
+      "target": "providers_iprovider_iprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_api_providerfactory_ts",
+      "target": "src_api_providers_ollama_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_api_providerfactory_ts",
+      "target": "src_api_providers_openai_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_api_providerfactory_ts",
+      "target": "api_providerfactory_providerfactory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/ProviderFactory.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "api_providerfactory_providerfactory",
+      "target": "api_providerfactory_providerfactory_createprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_api_providers_ollama_ts",
+      "target": "src_api_providers_iprovider_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_api_providers_ollama_ts",
+      "target": "providers_iprovider_iprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_api_providers_ollama_ts",
+      "target": "providers_ollama_ollama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "providers_ollama_ollama",
+      "target": "providers_ollama_ollama_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "providers_ollama_ollama",
+      "target": "providers_ollama_ollama_getinstance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "providers_ollama_ollama",
+      "target": "providers_ollama_ollama_buildrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "providers_ollama_ollama",
+      "target": "providers_ollama_ollama_generatecommitmessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Ollama.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "providers_ollama_ollama_generatecommitmessage",
+      "target": "providers_ollama_ollama_buildrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_api_providers_anthropic_ts",
+      "target": "src_api_providers_iprovider_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_api_providers_anthropic_ts",
+      "target": "providers_iprovider_iprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_api_providers_anthropic_ts",
+      "target": "providers_anthropic_anthropicprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "providers_anthropic_anthropicprovider",
+      "target": "providers_anthropic_anthropicprovider_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "providers_anthropic_anthropicprovider",
+      "target": "providers_anthropic_anthropicprovider_getinstance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "providers_anthropic_anthropicprovider",
+      "target": "providers_anthropic_anthropicprovider_buildrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "providers_anthropic_anthropicprovider",
+      "target": "providers_anthropic_anthropicprovider_generatecommitmessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/Anthropic.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "providers_anthropic_anthropicprovider_generatecommitmessage",
+      "target": "providers_anthropic_anthropicprovider_buildrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_api_providers_openai_ts",
+      "target": "src_api_providers_iprovider_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_api_providers_openai_ts",
+      "target": "providers_iprovider_iprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_api_providers_openai_ts",
+      "target": "providers_openai_openai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "providers_openai_openai",
+      "target": "providers_openai_openai_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "providers_openai_openai",
+      "target": "providers_openai_openai_getinstance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "providers_openai_openai",
+      "target": "providers_openai_openai_buildrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "providers_openai_openai",
+      "target": "providers_openai_openai_generatecommitmessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/OpenAI.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "providers_openai_openai_generatecommitmessage",
+      "target": "providers_openai_openai_buildrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/api/providers/IProvider.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_api_providers_iprovider_ts",
+      "target": "providers_iprovider_iprovider",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "0bd8f93069649c1f5107308bfbf21c823c3199ec"
+}
