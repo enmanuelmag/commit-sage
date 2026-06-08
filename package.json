@@ -1,0 +1,96 @@
+{
+  "name": "commit-sage",
+  "displayName": "Commit Sage",
+  "description": "AI-powered commit message generator from your local/remote LLM host that respects your commitlint rules and project conventions.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionDependencies": [
+    "vscode.git"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commit-sage.generateMessage",
+        "title": "Commit Sage: Generate Commit Message",
+        "icon": "$(sparkle)"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "command": "commit-sage.generateMessage",
+          "group": "navigation",
+          "when": "scmProvider == git"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Commit Sage Configuration",
+      "properties": {
+        "commit-sage.apiUrl": {
+          "type": "string",
+          "default": "",
+          "description": "The URL of your local/remote LLM host API endpoint. Example: http://localhost:8000"
+        },
+        "commit-sage.modelId": {
+          "type": "string",
+          "default": "",
+          "description": "The model ID for your local/remote LLM host."
+        },
+        "commit-sage.apiType": {
+          "type": "string",
+          "enum": [
+            "openai",
+            "ollama"
+          ],
+          "default": "openai"
+        },
+        "commit-sage.token": {
+          "type": "string",
+          "default": "",
+          "description": "The API token for authenticating with your LLM host."
+        },
+        "commit-sage.maxNewTokens": {
+          "type": "number",
+          "default": 256,
+          "description": "The maximum number of new tokens to generate."
+        },
+        "commit-sage.temperature": {
+          "type": "number",
+          "default": 0.15,
+          "description": "The sampling temperature for the LLM generation."
+        },
+        "commit-sage.maxDiffSize": {
+          "type": "number",
+          "default": 500,
+          "description": "The maximum size of the diff to include in the prompt."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.120.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.56.1",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
