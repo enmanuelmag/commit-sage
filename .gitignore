@@ -3,6 +3,11 @@ dist
 node_modules
 .vscode-test/
 *.vsix
+skills/
+
+# Compiled TypeScript artifacts (should only be in out/)
+src/**/*.js
+src/**/*.js.map
 # agent-harness-kit
 .harness/harness.db
 .harness/harness.db-shm

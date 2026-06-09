@@ -76,6 +76,13 @@
           "type": "number",
           "default": 0.15,
           "description": "The sampling temperature for the LLM generation."
+        },
+        "commit-sage.commitlintMaxRetries": {
+          "type": "number",
+          "default": 3,
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Maximum number of attempts to refine commit message to pass commitlint rules"
         }
       }
     }
@@ -98,5 +105,10 @@
     "eslint": "^9.39.3",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1"
+  },
+  "dependencies": {
+    "@commitlint/lint": "^21.0.2",
+    "@commitlint/load": "^21.0.2",
+    "@commitlint/resolve-extends": "^21.0.1"
   }
 }
