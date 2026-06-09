@@ -1,6 +1,6 @@
 {
   "name": "cardor-commit-sage",
-  "displayName": "Commit Sage",
+  "displayName": "Commitlint Sage",
   "repository": {
     "url": "https://github.com/enmanuelmag/commit-sage"
   },
