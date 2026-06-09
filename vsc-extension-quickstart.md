@@ -1,44 +1,103 @@
-# Welcome to your VS Code Extension
+# Commit Sage Quick Start
 
-## What's in the folder
+Get started with AI-powered commit messages in 5 minutes.
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file in which you declare your extension and command.
-  * The sample plugin registers a command and defines its title and command name. With this information VS Code can show the command in the command palette. It doesn’t yet need to load the plugin.
-* `src/extension.ts` - this is the main file where you will provide the implementation of your command.
-  * The file exports one function, `activate`, which is called the very first time your extension is activated (in this case by executing the command). Inside the `activate` function we call `registerCommand`.
-  * We pass the function containing the implementation of the command as the second parameter to `registerCommand`.
+## What is Commit Sage?
 
-## Get up and running straight away
+Tired of writing commit messages? Commit Sage generates clear, descriptive commit messages directly from your git changes using an LLM. Just stage your changes, click a button, and let AI do the work. Supports OpenAI API or free local Ollama instances.
 
-* Press `F5` to open a new window with your extension loaded.
-* Run your command from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Hello World`.
-* Set breakpoints in your code inside `src/extension.ts` to debug your extension.
-* Find output from your extension in the debug console.
+## Quick Setup (Choose One)
 
-## Make changes
+### Setup with OpenAI (5 minutes)
 
-* You can relaunch the extension from the debug toolbar after changing code in `src/extension.ts`.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+1. **Get an API Key**
+   - Go to [platform.openai.com](https://platform.openai.com)
+   - Sign up or log in
+   - Create a new API key in the API keys section
+   - Copy it
 
-## Explore the API
+2. **Configure in VS Code**
+   - Press `Cmd+,` (macOS) or `Ctrl+,` (Windows/Linux) to open Settings
+   - Search for "Commit Sage"
+   - Fill in:
+     - `commit-sage.apiUrl`: `https://api.openai.com`
+     - `commit-sage.apiType`: `openai`
+     - `commit-sage.modelId`: `gpt-3.5-turbo`
+     - `commit-sage.apiKey`: Your API key
 
-* You can open the full set of our API when you open the file `node_modules/@types/vscode/index.d.ts`.
+3. **Done!** You're ready to generate commit messages.
 
-## Run tests
+### Setup with Ollama (Free & Local, 5 minutes)
 
-* Install the [Extension Test Runner](https://marketplace.visualstudio.com/items?itemName=ms-vscode.extension-test-runner)
-* Run the "watch" task via the **Tasks: Run Task** command. Make sure this is running, or tests might not be discovered.
-* Open the Testing view from the activity bar and click the Run Test" button, or use the hotkey `Ctrl/Cmd + ; A`
-* See the output of the test result in the Test Results view.
-* Make changes to `src/test/extension.test.ts` or create new test files inside the `test` folder.
-  * The provided test runner will only consider files matching the name pattern `**.test.ts`.
-  * You can create folders inside the `test` folder to structure your tests any way you want.
+1. **Install Ollama**
+   - Download from [ollama.ai](https://ollama.ai) and install
+   - Open Terminal and run:
+     ```bash
+     ollama pull llama2
+     ollama serve
+     ```
 
-## Go further
+2. **Configure in VS Code**
+   - Press `Cmd+,` (macOS) or `Ctrl+,` (Windows/Linux) to open Settings
+   - Search for "Commit Sage"
+   - Fill in:
+     - `commit-sage.apiUrl`: `http://localhost:11434`
+     - `commit-sage.apiType`: `ollama`
+     - `commit-sage.modelId`: `llama2`
+     - `commit-sage.apiKey`: Leave empty
 
-* [Follow UX guidelines](https://code.visualstudio.com/api/ux-guidelines/overview) to create extensions that seamlessly integrate with VS Code's native interface and patterns.
-* Reduce the extension size and improve the startup time by [bundling your extension](https://code.visualstudio.com/api/working-with-extensions/bundling-extension).
-* [Publish your extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) on the VS Code extension marketplace.
-* Automate builds by setting up [Continuous Integration](https://code.visualstudio.com/api/working-with-extensions/continuous-integration).
-* Integrate to the [report issue](https://code.visualstudio.com/api/get-started/wrapping-up#issue-reporting) flow to get issue and feature requests reported by users.
+3. **Done!** Your local AI is ready.
+
+## Your First Commit Message
+
+1. **Stage Changes**
+   - Open the Source Control panel (Ctrl+Shift+G)
+   - Stage the files you want to commit
+
+2. **Generate Message**
+   - Look at the Source Control panel title bar
+   - Click the sparkle icon (✨)
+   - Wait a moment for the message to generate
+
+3. **Commit**
+   - Review the generated message in the commit input box
+   - Edit it if you want
+   - Click the checkmark or press Ctrl+Enter to commit
+
+## Customization Tips
+
+Want to tweak behavior? Check the full [README.md](./README.md) for all configuration options:
+
+- **More creative messages**: Increase `temperature` (default: 0.15)
+- **Better style consistency**: Increase `amountPreviousCommits` (default: 3)
+- **Shorter/longer messages**: Adjust `maxNewTokens` (default: 256)
+- **Better commitlint compliance**: Increase `commitlintMaxRetries` (default: 3)
+
+## Troubleshooting
+
+### "Failed to connect to API"
+
+- Check your `commit-sage.apiUrl` is correct
+- For OpenAI: `https://api.openai.com`
+- For Ollama: `http://localhost:11434` and make sure `ollama serve` is running
+
+### "Invalid API Key"
+
+- OpenAI: Create a new key at [platform.openai.com/api_keys](https://platform.openai.com/api_keys)
+- Reload VS Code after updating the key
+- Ensure your account has billing enabled
+
+### "Model not found"
+
+- OpenAI: Use a model that exists (gpt-3.5-turbo, gpt-4, etc.)
+- Ollama: Run `ollama pull llama2` (or your model) first
+
+For more help, see the [Troubleshooting section](./README.md#troubleshooting) in the full README.
+
+## Learn More
+
+- See the full [README.md](./README.md) for complete documentation
+- [Conventional Commits](https://www.conventionalcommits.org) — the standard Commit Sage follows
+- [Commitlint](https://commitlint.js.org) — how validation works
+- [OpenAI Docs](https://platform.openai.com/docs) — for OpenAI setup
+- [Ollama Docs](https://ollama.ai) — for local LLM setup
