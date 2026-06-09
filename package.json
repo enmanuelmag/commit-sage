@@ -11,12 +11,18 @@
   "engines": {
     "vscode": "^1.120.0"
   },
-  "categories": [
-    "Other"
+   "extensionKind": [
+    "workspace"
   ],
   "extensionDependencies": [
     "vscode.git"
   ],
+  "categories": [
+    "Machine Learning",
+    "Programming Languages",
+    "AI"
+  ],
+  "icon": "icon.png",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {

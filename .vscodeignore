@@ -9,3 +9,35 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+
+# Internal AI tooling — NEVER should be in a published extension
+  .harness/**
+  .agents/**
+  .claude/**
+  graphify-out/**
+  .mcp.json
+  CLAUDE.md
+  AGENTS.md
+  CHANGELOG.md
+  health.sh
+  scripts/**
+  agent-harness-kit.config.ts
+  skills-lock.json
+  feature_list.json
+
+  # Lock files and dev artifacts
+  pnpm-lock.yaml
+  *.vsix
+
+  # Ya existían
+  .vscode/**
+  .vscode-test/**
+  src/**
+  .gitignore
+  vsc-extension-quickstart.md
+  **/tsconfig.json
+  **/eslint.config.mjs
+  **/*.map
+  **/*.ts
+  **/.vscode-test.*
+  
