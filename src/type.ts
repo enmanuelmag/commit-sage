@@ -458,6 +458,21 @@ export interface SourceControlHistoryItemDetailsProvider {
   provideMessageLinks(repository: Repository, message: string): ProviderResult<string>;
 }
 
+// CommitLint types
+export interface CommitLintRules {
+  [key: string]: any;
+}
+
+export interface CommitLintConfig {
+  rules: CommitLintRules;
+  extends?: string | string[];
+}
+
+export interface CommitLintError {
+  message: string;
+  level?: number;
+}
+
 export type APIState = 'uninitialized' | 'initialized';
 
 export interface PublishEvent {

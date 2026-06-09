@@ -1,9 +1,13 @@
 import * as vscode from 'vscode';
 
-import { getConfig } from './config';
+import { getConfig, getCommitLintMaxRetries } from './config';
 
-import ProviderFactory from './api/ProviderFactory';
-import PromptBuilder from './api/PromptBuilder';
+import Logger from './utils/Logger';
+import GitContext from './utils/GitContext';
+import { ErrorHandler } from './utils/ErrorHandler';
+import { RepositorySelector } from './utils/RepositorySelector';
+
+import { CommitMessageGenerator } from './services/CommitMessageGenerator';
 
 import { GitExtension } from './type';
 
@@ -30,28 +34,29 @@ const executeWithProgress = async <T>(task: () => Promise<T>, title: string): Pr
 export function activate(context: vscode.ExtensionContext) {
 	const output = vscode.window.createOutputChannel('Commit Sage');
 
-	output.appendLine('Commit Sage activated.');
+	Logger.initialize(output);
+
+	Logger.info('Commit Sage activated.');
 
 	let isProcessing = false;
 
 	const gitExtension = vscode.extensions.getExtension<GitExtension>('vscode.git')?.exports;
 
 	if (!gitExtension) {
-		output.appendLine('Git extension not found.');
+		Logger.error('Git extension not found.');
 		vscode.window.showErrorMessage('Git extension not found. Please install the Git extension and try again.');
 		return;
 	}
 
 	if (!gitExtension.enabled) {
-		output.appendLine('Git extension is not enabled.');
+		Logger.error('Git extension is not enabled.');
 		vscode.window.showErrorMessage('Git extension is not enabled. Please enable the Git extension and try again.');
 		return;
 	}
 
 	const cmd = vscode.commands.registerCommand('commit-sage.generateMessage', async () => {
 		if (isProcessing) {
-			output.appendLine('⚠️  Already generating commit message...');
-			vscode.window.showWarningMessage('Already generating commit message...');
+			ErrorHandler.handleWarning('⚠️  Already generating', 'Already generating commit message...');
 			output.show();
 			return;
 		}
@@ -62,83 +67,47 @@ export function activate(context: vscode.ExtensionContext) {
 			await executeWithProgress(async () => {
 				const { apiType, providerConfig } = getConfig();
 
-				output.appendLine(`Using API Type: ${apiType}`);
-
-				if (!providerConfig.apiUrl) {
-					output.appendLine('API URL is not configured.');
-					vscode.window.showErrorMessage('API URL is not configured. Please set the API URL in the extension settings.');
-					return;
-				}
-
-				if (!providerConfig.modelId) {
-					output.appendLine('Model ID is not configured.');
-				}
-
-				let message: string;
-
 				const git = gitExtension.getAPI(1);
-
 				if (!git) {
-					output.appendLine('Failed to get Git API.');
-					vscode.window.showErrorMessage('Failed to get Git API. Please ensure the Git extension is properly installed and enabled.');
+					ErrorHandler.handleMissingGit();
 					return;
 				}
 
-				const repo = git.repositories[0];
+				const repo = await RepositorySelector.selectRepository(
+					git.repositories,
+					git
+				);
 
 				if (!repo) {
-					output.appendLine('No git repository found.');
-					vscode.window.showErrorMessage('No git repository found. Please open a folder with a git repository.');
+					ErrorHandler.handleNoRepository();
 					return;
 				}
 
 				try {
-					const stagedChanges = repo.state.indexChanges;
+					const allChanges = await GitContext.getAllChanges(repo);
 
-					const workingTreeChanges = repo.state.workingTreeChanges;
+					const maxRetries = getCommitLintMaxRetries();
+					const message = await CommitMessageGenerator.generateAndRefine(
+						repo,
+						allChanges,
+						apiType,
+						providerConfig,
+						maxRetries
+					);
 
-					const untrackedChanges = repo.state.untrackedChanges;
-
-					const mergeChanges = repo.state.mergeChanges;
-
-					const allChanges = [...stagedChanges, ...workingTreeChanges, ...untrackedChanges, ...mergeChanges];
-
-					if (allChanges.length === 0) {
-						output.appendLine('No changes detected in the repository.');
-						vscode.window.showWarningMessage('No changes detected in the repository. Please make some changes before generating a commit message.');
-						return;
+					if (message) {
+						repo.inputBox.value = message;
+						Logger.info(`Generated Commit Message: ${message}`);
+						Logger.info('Commit message set in input box.');
+						output.show();
 					}
-
-					const provider = ProviderFactory.createProvider(apiType);
-
-					const prompt = await PromptBuilder.buildPrompt(allChanges, providerConfig, repo, output);
-
-					message = await provider.generateCommitMessage(prompt, providerConfig, output);
 				} catch (error) {
-					output.appendLine(`${error}`);
-					vscode.window.showErrorMessage('Failed to generate commit message. Check output for details.');
-					return;
-				} finally {
-					isProcessing = false;
+					ErrorHandler.handleError('An unexpected error occurred', error);
 				}
-
-				if (!message) {
-					isProcessing = false;
-					output.appendLine('No commit message generated.');
-					vscode.window.showWarningMessage('No commit message generated. Check output for details.');
-					return;
-				}
-
-				output.appendLine(`Generated Commit Message: ${message}`);
-
-				repo.inputBox.value = message;
-
-				output.appendLine('Commit message set in input box.');
-				output.show();
 			}, 'Generating commit message...');
-		} catch (error) { }
-
-		isProcessing = false;
+		} finally {
+			isProcessing = false;
+		}
 	});
 
 	context.subscriptions.push(cmd);

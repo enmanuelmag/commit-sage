@@ -18,3 +18,7 @@ export const getConfig = (): CommitSageConfig => {
     }
   } satisfies CommitSageConfig;
 };
+
+export function getCommitLintMaxRetries(): number {
+  return vscode.workspace.getConfiguration('commit-sage').get('commitlintMaxRetries', 3);
+}
