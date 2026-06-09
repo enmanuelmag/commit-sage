@@ -28,9 +28,9 @@ echo -e "${YELLOW}3️⃣  Compiling TypeScript...${NC}"
 npm run compile
 echo -e "${GREEN}✅ Compilation successful${NC}"
 
-# Step 4: Validate extension package
-echo -e "${YELLOW}4️⃣  Validating extension package...${NC}"
-npx vsce validate
+# Step 4: Package and validate extension
+echo -e "${YELLOW}4️⃣  Packaging and validating extension...${NC}"
+npx vsce package
 echo -e "${GREEN}✅ Package validation passed${NC}"
 
 # Step 5: Extract version
