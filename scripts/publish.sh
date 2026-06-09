@@ -28,27 +28,22 @@ echo -e "${YELLOW}3️⃣  Compiling TypeScript...${NC}"
 pnpm run compile
 echo -e "${GREEN}✅ Compilation successful${NC}"
 
-# Step 4: Package and validate extension
-echo -e "${YELLOW}4️⃣  Packaging and validating extension...${NC}"
-npx vsce package
-echo -e "${GREEN}✅ Package validation passed${NC}"
-
-# Step 5: Extract version
+# Step 4: Extract version
 VERSION=$(jq -r '.version' package.json)
-echo -e "${YELLOW}5️⃣  Publishing version: ${VERSION}${NC}"
+echo -e "${YELLOW}4️⃣  Extracted version: ${VERSION}${NC}"
 
-# Step 6: Publish to VS Code Marketplace
-echo -e "${YELLOW}6️⃣  Publishing to VS Code Marketplace...${NC}"
-npx vsce publish --no-update-package-json
+# Step 5: Publish to VS Code Marketplace
+echo -e "${YELLOW}5️⃣  Publishing to VS Code Marketplace...${NC}"
+npx vsce publish --no-dependencies --no-update-package-json
 echo -e "${GREEN}✅ Published successfully${NC}"
 
-# Step 7: Create git tag
-echo -e "${YELLOW}7️⃣  Creating git tag v${VERSION}...${NC}"
+# Step 6: Create git tag
+echo -e "${YELLOW}6️⃣  Creating git tag v${VERSION}...${NC}"
 git tag "v${VERSION}"
 echo -e "${GREEN}✅ Git tag created${NC}"
 
-# Step 8: Push to remote with tags
-echo -e "${YELLOW}8️⃣  Pushing to remote with tags...${NC}"
+# Step 7: Push to remote with tags
+echo -e "${YELLOW}7️⃣  Pushing to remote with tags...${NC}"
 git push --follow-tags
 echo -e "${GREEN}✅ Pushed to remote${NC}"
 
