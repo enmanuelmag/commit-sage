@@ -1,12 +1,12 @@
 {
-  "name": "commit-sage",
+  "name": "cardor-commit-sage",
   "displayName": "Commit Sage",
   "repository": {
     "url": "https://github.com/enmanuelmag/commit-sage"
   },
   "publisher": "EnmanuelMagallanes",
   "description": "AI-powered commit message generator from your local/remote LLM host that respects your commitlint rules and project conventions.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "Apache-2.0",
   "engines": {
     "vscode": "^1.120.0"
