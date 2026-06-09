@@ -43,7 +43,7 @@ class Ollama implements IProvider {
 
   async generateCommitMessage(prompt: string, providerConfig: ProviderConfig, output: OutputChannel): Promise<string> {
     const base = new URL(providerConfig.apiUrl);
-    base.pathname = base.pathname.replace(/\/$/, '') + '/v1/api/chat';
+    base.pathname = base.pathname.replace(/\/$/, '') + '/api/chat';
     const url = base.toString();
 
     const response = await fetch(url, this.buildRequest(prompt, providerConfig));
@@ -55,9 +55,11 @@ class Ollama implements IProvider {
     try {
       const data = await response.json();
 
-      output.appendLine(`Ollama raw response: ${JSON.stringify(data)}`);
+      const commitMessage = data.message.content.trim();
 
-      return data.message.content.trim();
+      output.appendLine(`Ollama raw response: ${commitMessage.length}`);
+
+      return commitMessage;
     } catch (error) {
       throw new Error(`Error parsing Ollama response: ${error}`);
     }

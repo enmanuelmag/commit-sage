@@ -55,9 +55,11 @@ class OpenAI implements IProvider {
     try {
       const data = await response.json();
 
-      output.appendLine(`OpenAI raw response: ${JSON.stringify(data)}`);
+      const commitMessage = data.choices[0].message.content.trim();
 
-      return data.choices[0].message.content.trim();
+      output.appendLine(`OpenAI raw response: ${commitMessage.length}`);
+
+      return commitMessage;
     } catch (error) {
       throw new Error(`Error parsing OpenAI response: ${error}`);
     }

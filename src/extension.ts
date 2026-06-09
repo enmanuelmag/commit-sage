@@ -64,6 +64,16 @@ export function activate(context: vscode.ExtensionContext) {
 
 				output.appendLine(`Using API Type: ${apiType}`);
 
+				if (!providerConfig.apiUrl) {
+					output.appendLine('API URL is not configured.');
+					vscode.window.showErrorMessage('API URL is not configured. Please set the API URL in the extension settings.');
+					return;
+				}
+
+				if (!providerConfig.modelId) {
+					output.appendLine('Model ID is not configured.');
+				}
+
 				let message: string;
 
 				const git = gitExtension.getAPI(1);
@@ -101,7 +111,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 					const provider = ProviderFactory.createProvider(apiType);
 
-					const prompt = await PromptBuilder.buildPrompt(allChanges, providerConfig, repo);
+					const prompt = await PromptBuilder.buildPrompt(allChanges, providerConfig, repo, output);
 
 					message = await provider.generateCommitMessage(prompt, providerConfig, output);
 				} catch (error) {

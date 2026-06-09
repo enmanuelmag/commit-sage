@@ -1,3 +1,4 @@
+import { OutputChannel } from "vscode";
 import { Change, ChangeWithDiff, ProviderConfig, Repository, Status, StatusType } from "../type";
 
 const SYSTEM_PROMPT = `You are a helpful assistant that generates concise and clear commit messages based on git diffs.
@@ -51,7 +52,7 @@ class PromptBuilder {
     [Status.UNTRACKED, 'untracked'],
   ]);
 
-  static async buildPrompt(changes: Change[], config: ProviderConfig, repo: Repository): Promise<string> {
+  static async buildChangeWithDiff(changes: Change[], config: ProviderConfig, repo: Repository, output: OutputChannel) {
     const allChangesWithDiff: ChangeWithDiff[] = [];
 
     const MAX_DIFF_SIZE = config.maxDiffSize ?? 500;
@@ -78,6 +79,8 @@ class PromptBuilder {
       });
     }
 
+    output.appendLine(`Generated diffs for changes. Total changes: ${changes.length}, Changes with diff: ${allChangesWithDiff.filter(c => c.status === 'modified').length}`);
+
     let changeSummaries = '';
 
     for (const change of allChangesWithDiff) {
@@ -91,7 +94,46 @@ class PromptBuilder {
       }
     }
 
-    return `Here are the changes:\n${changeSummaries}`;
+
+    return changeSummaries;
+  }
+
+  static async buildPreviousCommits(config: ProviderConfig, repo: Repository, output: OutputChannel): Promise<string> {
+    try {
+      output.appendLine(`Fetching previous commits. Amount: ${config.amountPreviousCommits}`);
+
+      const logs = await repo.log({ maxEntries: config.amountPreviousCommits });
+
+      output.appendLine(`Fetched ${logs.length} previous commits.`);
+
+      const previousCommits = logs.map(commit => `- ${commit.message.split('\n')[0]} (${commit.hash.substring(0, 7)})`).join('\n');
+
+      return previousCommits;
+    } catch (error) {
+      output.appendLine(`Error fetching previous commits: ${error}`);
+
+      return `Error fetching previous commits: ${error}`;
+    }
+  }
+
+  static async buildPrompt(changes: Change[], config: ProviderConfig, repo: Repository, output: OutputChannel): Promise<string> {
+
+    const promises = [
+      this.buildChangeWithDiff(changes, config, repo, output),
+      this.buildPreviousCommits(config, repo, output),
+    ] as const;
+
+    const [changesWithDiff, previousCommits] = await Promise.all(promises);
+
+    let prompt = `Here are the changes:\n${changesWithDiff}\n`;
+
+    if (previousCommits) {
+      prompt += `\nHere are the previous commits:\n${previousCommits}\n`;
+    }
+
+    prompt += `\nBased on the above changes, generate a concise commit message in the Conventional Commits format.`;
+
+    return prompt;
   }
 }
 

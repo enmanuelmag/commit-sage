@@ -1,0 +1,6 @@
+- [x] Test Ollama provider
+- [] Add config to n-previous commits to include in prompt (be positive, if 0 dont include any previous commits, if 1 include only the last commit, etc.)
+- [] Add config to include staged changes in prompt (boolean)
+- [] Add config to include unstaged changes in prompt (boolean)
+- [] Add config to include untracked files in prompt (boolean)
+- [] Add logic to read commit-lint config and inner cycle to refine commit message if it does not pass linting rules, with max retry attempts config (mu execute commands or terminal?) This only run when commit-lint config is detected in the project

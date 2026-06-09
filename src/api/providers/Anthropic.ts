@@ -55,9 +55,11 @@ class AnthropicProvider implements IProvider {
     try {
       const data = await response.json();
 
-      output.appendLine(`Anthropic raw response: ${JSON.stringify(data)}`);
+      const commitMessage = data.content[0].text.trim();
 
-      return data.content[0].text.trim();
+      output.appendLine(`Anthropic raw response: ${commitMessage.length}`);
+
+      return commitMessage;
     } catch (error) {
       throw new Error(`Error parsing Anthropic response: ${error}`);
     }

@@ -6,6 +6,8 @@ export type ApiKey = string;
 
 export type MaxDiffSize = number;
 
+export type AmountPreviousCommits = number;
+
 export enum ApiType {
   OpenAI = 'openai',
   Anthropic = 'anthropic',
@@ -25,6 +27,7 @@ export type ProviderConfig = {
   maxNewTokens: MaxNewTokens;
   temperature: Temperature;
   maxDiffSize: MaxDiffSize;
+  amountPreviousCommits: AmountPreviousCommits;
 };
 
 export type CommitSageConfig = {
