@@ -1,5 +1,4 @@
-import { OutputChannel } from "vscode";
-
+import Logger from "../../utils/Logger";
 import PromptBuilder from "../PromptBuilder";
 
 import { IProvider } from "./IProvider";
@@ -17,8 +16,8 @@ class OpenAI implements IProvider {
     return OpenAI.instance;
   }
 
-  buildRequest(prompt: string, providerConfig: ProviderConfig): RequestInit {
-    const { apiKey, modelId, maxNewTokens, temperature } = providerConfig;
+  buildRequest(prompt: string, providerConfig: ProviderConfig, systemPrompt: string): RequestInit {
+    const { apiKey, modelId, temperature } = providerConfig;
 
     try {
       return {
@@ -31,7 +30,7 @@ class OpenAI implements IProvider {
           model: modelId,
           temperature,
           messages: [
-            { role: 'system', content: PromptBuilder.getSystemPrompt() },
+            { role: 'system', content: systemPrompt },
             { role: 'user', content: prompt },
           ],
         }),
@@ -41,12 +40,14 @@ class OpenAI implements IProvider {
     }
   }
 
-  async generateCommitMessage(prompt: string, providerConfig: ProviderConfig, output: OutputChannel): Promise<string> {
+  async generateCommitMessage(prompt: string, providerConfig: ProviderConfig, repoPath?: string): Promise<string> {
+    const systemPrompt = await PromptBuilder.getSystemPrompt(repoPath);
+
     const base = new URL(providerConfig.apiUrl);
     base.pathname = base.pathname.replace(/\/$/, '') + '/v1/chat/completions';
     const url = base.toString();
 
-    const response = await fetch(url, this.buildRequest(prompt, providerConfig));
+    const response = await fetch(url, this.buildRequest(prompt, providerConfig, systemPrompt));
 
     if (!response.ok) {
       throw new Error(`OpenAI API error: ${response.statusText}`);
@@ -57,7 +58,10 @@ class OpenAI implements IProvider {
 
       const commitMessage = data.choices[0].message.content.trim();
 
-      output.appendLine(`OpenAI raw response: ${commitMessage.length}`);
+      Logger.info('OpenAI response generated', {
+        messageLength: commitMessage.length,
+        model: providerConfig.modelId
+      });
 
       return commitMessage;
     } catch (error) {

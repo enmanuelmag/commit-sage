@@ -1,5 +1,4 @@
-import { OutputChannel } from "vscode";
-
+import Logger from "../../utils/Logger";
 import PromptBuilder from "../PromptBuilder";
 
 import { IProvider } from "./IProvider";
@@ -17,7 +16,7 @@ class AnthropicProvider implements IProvider {
     return AnthropicProvider.instance;
   }
 
-  buildRequest(prompt: string, providerConfig: ProviderConfig): RequestInit {
+  buildRequest(prompt: string, providerConfig: ProviderConfig, systemPrompt: string): RequestInit {
     const { apiKey, modelId, maxNewTokens, temperature } = providerConfig;
 
     try {
@@ -31,7 +30,7 @@ class AnthropicProvider implements IProvider {
         body: JSON.stringify({
           model: modelId,
           temperature,
-          system: PromptBuilder.getSystemPrompt(),
+          system: systemPrompt,
           max_tokens: maxNewTokens,
           messages: [{ role: 'user', content: prompt }],
         }),
@@ -41,12 +40,14 @@ class AnthropicProvider implements IProvider {
     }
   }
 
-  async generateCommitMessage(prompt: string, providerConfig: ProviderConfig, output: OutputChannel): Promise<string> {
+  async generateCommitMessage(prompt: string, providerConfig: ProviderConfig, repoPath?: string): Promise<string> {
+    const systemPrompt = await PromptBuilder.getSystemPrompt(repoPath);
+
     const base = new URL(providerConfig.apiUrl);
     base.pathname = base.pathname.replace(/\/$/, '') + '/v1/messages';
     const url = base.toString();
 
-    const response = await fetch(url, this.buildRequest(prompt, providerConfig));
+    const response = await fetch(url, this.buildRequest(prompt, providerConfig, systemPrompt));
 
     if (!response.ok) {
       throw new Error(`Anthropic API error: ${response.statusText}`);
@@ -57,7 +58,10 @@ class AnthropicProvider implements IProvider {
 
       const commitMessage = data.content[0].text.trim();
 
-      output.appendLine(`Anthropic raw response: ${commitMessage.length}`);
+      Logger.info('Anthropic response generated', {
+        messageLength: commitMessage.length,
+        model: providerConfig.modelId
+      });
 
       return commitMessage;
     } catch (error) {

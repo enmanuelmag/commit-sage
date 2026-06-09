@@ -1,5 +1,4 @@
-import { OutputChannel } from "vscode";
-
+import Logger from "../../utils/Logger";
 import PromptBuilder from "../PromptBuilder";
 
 import { IProvider } from "./IProvider";
@@ -17,8 +16,8 @@ class Ollama implements IProvider {
     return Ollama.instance;
   }
 
-  buildRequest(prompt: string, providerConfig: ProviderConfig): RequestInit {
-    const { modelId, maxNewTokens, temperature } = providerConfig;
+  buildRequest(prompt: string, providerConfig: ProviderConfig, systemPrompt: string): RequestInit {
+    const { modelId, temperature } = providerConfig;
 
     try {
       return {
@@ -31,7 +30,7 @@ class Ollama implements IProvider {
             temperature,
           },
           messages: [
-            { role: 'system', content: PromptBuilder.getSystemPrompt() },
+            { role: 'system', content: systemPrompt },
             { role: 'user', content: prompt },
           ],
         }),
@@ -41,12 +40,14 @@ class Ollama implements IProvider {
     }
   }
 
-  async generateCommitMessage(prompt: string, providerConfig: ProviderConfig, output: OutputChannel): Promise<string> {
+  async generateCommitMessage(prompt: string, providerConfig: ProviderConfig, repoPath?: string): Promise<string> {
+    const systemPrompt = await PromptBuilder.getSystemPrompt(repoPath);
+
     const base = new URL(providerConfig.apiUrl);
     base.pathname = base.pathname.replace(/\/$/, '') + '/api/chat';
     const url = base.toString();
 
-    const response = await fetch(url, this.buildRequest(prompt, providerConfig));
+    const response = await fetch(url, this.buildRequest(prompt, providerConfig, systemPrompt));
 
     if (!response.ok) {
       throw new Error(`Ollama API error: ${response.statusText}`);
@@ -57,7 +58,10 @@ class Ollama implements IProvider {
 
       const commitMessage = data.message.content.trim();
 
-      output.appendLine(`Ollama raw response: ${commitMessage.length}`);
+      Logger.info('Ollama response generated', {
+        messageLength: commitMessage.length,
+        model: providerConfig.modelId
+      });
 
       return commitMessage;
     } catch (error) {
