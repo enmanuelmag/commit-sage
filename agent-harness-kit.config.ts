@@ -1,8 +1,8 @@
-import { defineHarness } from '@cardor/agent-harness-kit'
+import { defineHarness } from '@cardor/agent-harness-kit';
 
 export default defineHarness({
   project: {
-    name: "commit-sage",
+    name: "commitlint-sage",
     description: "A vs code extension to auto fill commit message from a local/remote host LLM API (OpenAI, Ollama, and more)",
     docsPath: './docs',
   },
@@ -44,4 +44,4 @@ export default defineHarness({
     mcp:     { enabled: true, port: 3742 },
     scripts: { enabled: true, outputDir: './.harness/scripts' },
   },
-})
+});

@@ -20,10 +20,10 @@ Tired of writing commit messages? Commit Sage generates clear, descriptive commi
    - Press `Cmd+,` (macOS) or `Ctrl+,` (Windows/Linux) to open Settings
    - Search for "Commit Sage"
    - Fill in:
-     - `commit-sage.apiUrl`: `https://api.openai.com`
-     - `commit-sage.apiType`: `openai`
-     - `commit-sage.modelId`: `gpt-3.5-turbo`
-     - `commit-sage.apiKey`: Your API key
+     - `commitlint-sage.apiUrl`: `https://api.openai.com`
+     - `commitlint-sage.apiType`: `openai`
+     - `commitlint-sage.modelId`: `gpt-3.5-turbo`
+     - `commitlint-sage.apiKey`: Your API key
 
 3. **Done!** You're ready to generate commit messages.
 
@@ -41,10 +41,10 @@ Tired of writing commit messages? Commit Sage generates clear, descriptive commi
    - Press `Cmd+,` (macOS) or `Ctrl+,` (Windows/Linux) to open Settings
    - Search for "Commit Sage"
    - Fill in:
-     - `commit-sage.apiUrl`: `http://localhost:11434`
-     - `commit-sage.apiType`: `ollama`
-     - `commit-sage.modelId`: `llama2`
-     - `commit-sage.apiKey`: Leave empty
+     - `commitlint-sage.apiUrl`: `http://localhost:11434`
+     - `commitlint-sage.apiType`: `ollama`
+     - `commitlint-sage.modelId`: `llama2`
+     - `commitlint-sage.apiKey`: Leave empty
 
 3. **Done!** Your local AI is ready.
 
@@ -77,7 +77,7 @@ Want to tweak behavior? Check the full [README.md](./README.md) for all configur
 
 ### "Failed to connect to API"
 
-- Check your `commit-sage.apiUrl` is correct
+- Check your `commitlint-sage.apiUrl` is correct
 - For OpenAI: `https://api.openai.com`
 - For Ollama: `http://localhost:11434` and make sure `ollama serve` is running
 

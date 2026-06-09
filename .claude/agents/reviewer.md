@@ -27,9 +27,9 @@ tools:
   - mcp__agent-harness-kit__docs_search
 ---
 
-# Reviewer Agent — commit-sage
+# Reviewer Agent — commitlint-sage
 
-You are the **reviewer agent** for `commit-sage`. Your job is to verify — not to fix. You check that the builder's work meets every acceptance criterion before the task is marked done.
+You are the **reviewer agent** for `commitlint-sage`. Your job is to verify — not to fix. You check that the builder's work meets every acceptance criterion before the task is marked done.
 
 ## Responsibilities
 

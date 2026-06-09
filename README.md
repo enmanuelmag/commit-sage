@@ -29,7 +29,7 @@ Install Commit Sage directly from the [VS Code Marketplace](https://marketplace.
 
 ## Extension Settings
 
-This extension contributes the following configuration options (all prefixed with `commit-sage.`):
+This extension contributes the following configuration options (all prefixed with `commitlint-sage.`):
 
 | Setting | Type | Default | Required | Description |
 |---------|------|---------|----------|-------------|
@@ -57,10 +57,10 @@ This extension contributes the following configuration options (all prefixed wit
    - Open VS Code Settings (Cmd+, on macOS or Ctrl+, on Windows/Linux)
    - Search for "Commit Sage"
    - Set the following:
-     - `commit-sage.apiUrl`: `https://api.openai.com`
-     - `commit-sage.apiType`: `openai`
-     - `commit-sage.modelId`: `gpt-3.5-turbo` (or `gpt-4` if you have access)
-     - `commit-sage.apiKey`: Paste your API key here
+     - `commitlint-sage.apiUrl`: `https://api.openai.com`
+     - `commitlint-sage.apiType`: `openai`
+     - `commitlint-sage.modelId`: `gpt-3.5-turbo` (or `gpt-4` if you have access)
+     - `commitlint-sage.apiKey`: Paste your API key here
 
 3. **Start Generating**
    - Open the Source Control panel (Ctrl+Shift+G on Windows/Linux, Cmd+Shift+G on macOS)
@@ -87,10 +87,10 @@ This extension contributes the following configuration options (all prefixed wit
    - Open VS Code Settings (Cmd+, on macOS or Ctrl+, on Windows/Linux)
    - Search for "Commit Sage"
    - Set the following:
-     - `commit-sage.apiUrl`: `http://localhost:11434`
-     - `commit-sage.apiType`: `ollama`
-     - `commit-sage.modelId`: `llama2` (or whatever model you pulled)
-     - `commit-sage.apiKey`: Leave empty (not required for Ollama)
+     - `commitlint-sage.apiUrl`: `http://localhost:11434`
+     - `commitlint-sage.apiType`: `ollama`
+     - `commitlint-sage.modelId`: `llama2` (or whatever model you pulled)
+     - `commitlint-sage.apiKey`: Leave empty (not required for Ollama)
 
 3. **Start Generating**
    - Open the Source Control panel (Ctrl+Shift+G on Windows/Linux, Cmd+Shift+G on macOS)
@@ -126,10 +126,10 @@ A user-friendly GUI application for running LLMs locally with zero command-line 
    - Set the following:
      ```json
      {
-       "commit-sage.apiUrl": "http://localhost:1234",
-       "commit-sage.apiType": "openai",
-       "commit-sage.modelId": "your-model-id",
-       "commit-sage.apiKey": ""
+       "commitlint-sage.apiUrl": "http://localhost:1234",
+       "commitlint-sage.apiType": "openai",
+       "commitlint-sage.modelId": "your-model-id",
+       "commitlint-sage.apiKey": ""
      }
      ```
    - Note: Use the exact model id shown in LM Studio's UI (visible in the model selector)
@@ -163,10 +163,10 @@ A feature-rich Python-based web interface for advanced users who want maximum cu
    - Set the following:
      ```json
      {
-       "commit-sage.apiUrl": "http://localhost:5000",
-       "commit-sage.apiType": "openai",
-       "commit-sage.modelId": "your-loaded-model-name",
-       "commit-sage.apiKey": ""
+       "commitlint-sage.apiUrl": "http://localhost:5000",
+       "commitlint-sage.apiType": "openai",
+       "commitlint-sage.modelId": "your-loaded-model-name",
+       "commitlint-sage.apiKey": ""
      }
      ```
 
@@ -204,10 +204,10 @@ A high-performance inference engine optimized for GPU execution, ideal for produ
    - Set the following:
      ```json
      {
-       "commit-sage.apiUrl": "http://localhost:8000",
-       "commit-sage.apiType": "openai",
-       "commit-sage.modelId": "your-huggingface-model-id",
-       "commit-sage.apiKey": ""
+       "commitlint-sage.apiUrl": "http://localhost:8000",
+       "commitlint-sage.apiType": "openai",
+       "commitlint-sage.modelId": "your-huggingface-model-id",
+       "commitlint-sage.apiKey": ""
      }
      ```
    - Use the same HuggingFace model ID you passed to the startup command
@@ -232,10 +232,10 @@ Then use `http://localhost:8001` in your Commit Sage configuration.
 
 All local hosting platforms in this section share a common configuration pattern:
 
-- `commit-sage.apiType`: **Always use `openai`** (unlike Ollama which uses `ollama`)
-- `commit-sage.apiKey`: Leave empty (no authentication needed for local services)
-- `commit-sage.apiUrl`: Use the platform's default endpoint (or custom port if modified)
-- `commit-sage.modelId`: Use the exact model name/ID from your platform
+- `commitlint-sage.apiType`: **Always use `openai`** (unlike Ollama which uses `ollama`)
+- `commitlint-sage.apiKey`: Leave empty (no authentication needed for local services)
+- `commitlint-sage.apiUrl`: Use the platform's default endpoint (or custom port if modified)
+- `commitlint-sage.modelId`: Use the exact model name/ID from your platform
 
 To test any platform's endpoint, use:
 ```bash
@@ -270,7 +270,7 @@ Adjust these settings in VS Code to fine-tune generation:
 **Problem**: "Failed to connect to API" error
 
 **Solutions**:
-- Verify `commit-sage.apiUrl` is correct:
+- Verify `commitlint-sage.apiUrl` is correct:
   - OpenAI: `https://api.openai.com`
   - Ollama: `http://localhost:11434`
 - Ensure Ollama is running: `ollama serve` in a terminal
@@ -284,7 +284,7 @@ Adjust these settings in VS Code to fine-tune generation:
 **Solutions** (OpenAI):
 - Go to [platform.openai.com/api_keys](https://platform.openai.com/api_keys)
 - Create a new API key (old keys may have expired)
-- Paste the new key into `commit-sage.apiKey`
+- Paste the new key into `commitlint-sage.apiKey`
 - Reload VS Code (Cmd+R on macOS, Ctrl+R on Windows/Linux)
 - Ensure your API key has billing enabled
 
@@ -303,7 +303,7 @@ Adjust these settings in VS Code to fine-tune generation:
 **Problem**: Generated message fails commitlint rules repeatedly
 
 **Solutions**:
-- Increase `commit-sage.commitlintMaxRetries` (up to 10)
+- Increase `commitlint-sage.commitlintMaxRetries` (up to 10)
 - Check your commitlint configuration file (`.commitlintrc` or similar)
 - Review the rules your project enforces
 - Manually adjust the generated message to match your rules
@@ -314,9 +314,9 @@ Adjust these settings in VS Code to fine-tune generation:
 **Problem**: Generated messages are generic or miss important details
 
 **Solutions**:
-- Increase `commit-sage.amountPreviousCommits` to provide more context
+- Increase `commitlint-sage.amountPreviousCommits` to provide more context
 - Try a different model (gpt-4 over gpt-3.5-turbo for better quality)
-- Increase `commit-sage.temperature` slightly for more variety
+- Increase `commitlint-sage.temperature` slightly for more variety
 - Ensure you're staging all relevant changes
 - Manual messages are always an option—Commit Sage is here to help, not force
 
@@ -327,7 +327,7 @@ Adjust these settings in VS Code to fine-tune generation:
 **Solutions**:
 - Run `ollama serve` in a terminal to start the server
 - Verify it's running: `curl http://localhost:11434/api/tags`
-- Ensure `commit-sage.apiUrl` is exactly `http://localhost:11434`
+- Ensure `commitlint-sage.apiUrl` is exactly `http://localhost:11434`
 - Check firewall settings aren't blocking local connections
 
 ## Known Issues
@@ -350,7 +350,7 @@ Initial release of Commit Sage:
 
 ## Contributing
 
-For issues, feature requests, or contributions, visit the [Commit Sage repository](https://github.com/enmanuelmag/commit-sage).
+For issues, feature requests, or contributions, visit the [Commit Sage repository](https://github.com/enmanuelmag/commitlint-sage).
 
 ## License
 

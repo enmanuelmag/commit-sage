@@ -1,10 +1,10 @@
-# AGENTS.md — commit-sage
+# AGENTS.md — commitlint-sage
 
 > **Read this file first.** It is the navigation map for every AI agent working in this repository.
 
 ## Project
 
-**commit-sage** — A vs code extension to auto fill commit message from a local/remote host LLM API (OpenAI, Ollama, and more)
+**commitlint-sage** — A vs code extension to auto fill commit message from a local/remote host LLM API (OpenAI, Ollama, and more)
 
 ## Health check (run before making codebase changes)
 

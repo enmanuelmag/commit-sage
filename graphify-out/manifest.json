@@ -1,69 +1,69 @@
 {
-  "/Users/sadie/Code/NodeJs/commit-sage/agent-harness-kit.config.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/agent-harness-kit.config.ts": {
     "mtime": 1780946348.6545846,
     "hash": "9a50f219063fe833b8fb19473e3dbb08"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/eslint.config.mjs": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/eslint.config.mjs": {
     "mtime": 1780926876.7972634,
     "hash": "2b9452ad80ed88bffba771580aac5fbc"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/extension.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/extension.ts": {
     "mtime": 1780939689.7558744,
     "hash": "c7eacecadc2d225f316e06260e30f272"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/type.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/type.ts": {
     "mtime": 1780937998.140751,
     "hash": "a588f9b28565a9c58e38e267367d2766"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/config.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/config.ts": {
     "mtime": 1780937982.9041052,
     "hash": "2717d39b217cc5ec0806121190c0a1af"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/test/extension.test.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/test/extension.test.ts": {
     "mtime": 1780926876.7965927,
     "hash": "1c2c82950261444204f81ca85e088b57"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/api/PromptBuilder.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/api/PromptBuilder.ts": {
     "mtime": 1780938098.0487387,
     "hash": "59f667596ccf5d3cb19340d8e96e4b1d"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/api/ProviderFactory.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/api/ProviderFactory.ts": {
     "mtime": 1780929505.8094363,
     "hash": "d120a1706b5379afb7dd3757afc4b1ec"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/api/providers/Ollama.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/api/providers/Ollama.ts": {
     "mtime": 1780939711.584913,
     "hash": "4b3314d8a297c43ec8168b11ef689095"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/api/providers/Anthropic.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/api/providers/Anthropic.ts": {
     "mtime": 1780941466.7585063,
     "hash": "cde0239e4390e9657cf8ba6d7e691517"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/api/providers/OpenAI.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/api/providers/OpenAI.ts": {
     "mtime": 1780939717.1631114,
     "hash": "7fda8f198cda9b209fd7f61767c56c8b"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/src/api/providers/IProvider.ts": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/src/api/providers/IProvider.ts": {
     "mtime": 1780932648.9660664,
     "hash": "677cd5f2c091cf9717d860839a80be0a"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/CHANGELOG.md": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/CHANGELOG.md": {
     "mtime": 1780926876.795938,
     "hash": "cadadd2172d90c02bfc978442ee83ecf"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/README.md": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/README.md": {
     "mtime": 1780926876.795721,
     "hash": "2054e08b1a6bb133d87ccdb7bd129b5d"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/AGENTS.md": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/AGENTS.md": {
     "mtime": 1780946348.664071,
     "hash": "1b588bec91a619dfb092616ff0d3a5fd"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/vsc-extension-quickstart.md": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/vsc-extension-quickstart.md": {
     "mtime": 1780926876.7951367,
     "hash": "580eea3cb95d59b600e2ebee26024c36"
   },
-  "/Users/sadie/Code/NodeJs/commit-sage/CLAUDE.md": {
+  "/Users/sadie/Code/NodeJs/commitlint-sage/CLAUDE.md": {
     "mtime": 1780946348.664262,
     "hash": "67a3db0318dcb573974767cfa5e436cd"
   }

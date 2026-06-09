@@ -54,7 +54,7 @@ export function activate(context: vscode.ExtensionContext) {
 		return;
 	}
 
-	const cmd = vscode.commands.registerCommand('commit-sage.generateMessage', async () => {
+	const cmd = vscode.commands.registerCommand('commitlint-sage.generateMessage', async () => {
 		if (isProcessing) {
 			ErrorHandler.handleWarning('⚠️  Already generating', 'Already generating commit message...');
 			output.show();

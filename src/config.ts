@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 import { ApiType, CommitSageConfig } from "./type";
 
 export const getConfig = (): CommitSageConfig => {
-  const config = vscode.workspace.getConfiguration('commit-sage');
+  const config = vscode.workspace.getConfiguration('commitlint-sage');
 
   return {
     apiType: config.get('apiType') ?? ApiType.OpenAI,
@@ -20,5 +20,5 @@ export const getConfig = (): CommitSageConfig => {
 };
 
 export function getCommitLintMaxRetries(): number {
-  return vscode.workspace.getConfiguration('commit-sage').get('commitlintMaxRetries', 3);
+  return vscode.workspace.getConfiguration('commitlint-sage').get('commitlintMaxRetries', 3);
 }

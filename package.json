@@ -1,8 +1,8 @@
 {
-  "name": "cardor-commit-sage",
+  "name": "cardor-commitlint-sage",
   "displayName": "Commitlint Sage",
   "repository": {
-    "url": "https://github.com/enmanuelmag/commit-sage"
+    "url": "https://github.com/enmanuelmag/commitlint-sage"
   },
   "publisher": "EnmanuelMagallanes",
   "description": "AI-powered commit message generator from your local/remote LLM host that respects your commitlint rules and project conventions.",
@@ -22,7 +22,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "commit-sage.generateMessage",
+        "command": "commitlint-sage.generateMessage",
         "title": "Commit Sage: Generate Commit Message",
         "icon": "$(sparkle)"
       }
@@ -30,7 +30,7 @@
     "menus": {
       "scm/title": [
         {
-          "command": "commit-sage.generateMessage",
+          "command": "commitlint-sage.generateMessage",
           "group": "navigation",
           "when": "scmProvider == git"
         }
@@ -39,17 +39,17 @@
     "configuration": {
       "title": "Commit Sage Configuration",
       "properties": {
-        "commit-sage.apiUrl": {
+        "commitlint-sage.apiUrl": {
           "type": "string",
           "default": "",
           "description": "The URL of your local/remote LLM host API endpoint (without pathname). Example: http://localhost:8000"
         },
-        "commit-sage.modelId": {
+        "commitlint-sage.modelId": {
           "type": "string",
           "default": "",
           "description": "The model ID for your local/remote LLM host."
         },
-        "commit-sage.apiType": {
+        "commitlint-sage.apiType": {
           "type": "string",
           "enum": [
             "openai",
@@ -57,32 +57,32 @@
           ],
           "default": "openai"
         },
-        "commit-sage.apiKey": {
+        "commitlint-sage.apiKey": {
           "type": "string",
           "default": "",
           "description": "The API token for authenticating with your LLM host."
         },
-        "commit-sage.amountPreviousCommits": {
+        "commitlint-sage.amountPreviousCommits": {
           "type": "number",
           "default": 3,
           "description": "The number of previous commits to include in the prompt as context"
         },
-        "commit-sage.maxDiffSize": {
+        "commitlint-sage.maxDiffSize": {
           "type": "number",
           "default": 500,
           "description": "The maximum size of the diff to include in the prompt."
         },
-        "commit-sage.maxNewTokens": {
+        "commitlint-sage.maxNewTokens": {
           "type": "number",
           "default": 256,
           "description": "The maximum number of new tokens to generate."
         },
-        "commit-sage.temperature": {
+        "commitlint-sage.temperature": {
           "type": "number",
           "default": 0.15,
           "description": "The sampling temperature for the LLM generation."
         },
-        "commit-sage.commitlintMaxRetries": {
+        "commitlint-sage.commitlintMaxRetries": {
           "type": "number",
           "default": 3,
           "minimum": 1,

@@ -28,9 +28,9 @@ tools:
   - mcp__agent-harness-kit__docs_search
 ---
 
-# Builder Agent — commit-sage
+# Builder Agent — commitlint-sage
 
-You are the **builder agent** for `commit-sage`. Your job is to implement — based on the lead's plan and the explorer's analysis. You do not explore. You do not review. You build.
+You are the **builder agent** for `commitlint-sage`. Your job is to implement — based on the lead's plan and the explorer's analysis. You do not explore. You do not review. You build.
 
 ## Responsibilities
 

@@ -26,9 +26,9 @@ tools:
   - mcp__agent-harness-kit__docs_search
 ---
 
-# Lead Agent — commit-sage
+# Lead Agent — commitlint-sage
 
-You are the **lead agent** for `commit-sage`. Your job is to orchestrate the harness workflow for one task at a time. You coordinate — you do not implement.
+You are the **lead agent** for `commitlint-sage`. Your job is to orchestrate the harness workflow for one task at a time. You coordinate — you do not implement.
 
 ---
 
