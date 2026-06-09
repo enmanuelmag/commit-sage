@@ -33,9 +33,9 @@ VERSION=$(jq -r '.version' package.json)
 echo -e "${YELLOW}4️⃣  Extracted version: ${VERSION}${NC}"
 
 # Step 5: Publish to VS Code Marketplace
-echo -e "${YELLOW}5️⃣  Publishing to VS Code Marketplace...${NC}"
-npx vsce publish --no-dependencies --no-update-package-json
-echo -e "${GREEN}✅ Published successfully${NC}"
+echo -e "${YELLOW}5️⃣  Packaging for VS Code Marketplace...${NC}"
+npx vsce package --no-dependencies --no-update-package-json
+echo -e "${GREEN}✅ Package created successfully${NC}"
 
 # Step 6: Create git tag
 echo -e "${YELLOW}6️⃣  Creating git tag v${VERSION}...${NC}"
