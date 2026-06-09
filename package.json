@@ -1,5 +1,5 @@
 {
-  "name": "cardor.commit-sage",
+  "name": "commit-sage",
   "displayName": "Commit Sage",
   "publisher": "EnmanuelMagallanes",
   "description": "AI-powered commit message generator from your local/remote LLM host that respects your commitlint rules and project conventions.",
