@@ -25,7 +25,7 @@ echo -e "${GREEN}✅ Health check passed${NC}"
 
 # Step 3: Compile TypeScript
 echo -e "${YELLOW}3️⃣  Compiling TypeScript...${NC}"
-npm run compile
+pnpm run compile
 echo -e "${GREEN}✅ Compilation successful${NC}"
 
 # Step 4: Package and validate extension
