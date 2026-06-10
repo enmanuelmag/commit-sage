@@ -1,5 +1,5 @@
 {
-  "name": "cardor-commitlint-sage",
+  "name": "commitlint-sage",
   "displayName": "Commitlint Sage",
   "repository": {
     "url": "https://github.com/enmanuelmag/commitlint-sage"
@@ -19,7 +19,6 @@
   ],
   "categories": [
     "Machine Learning",
-    "Programming Languages",
     "AI"
   ],
   "icon": "icon.png",

@@ -9,6 +9,7 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+out/test/**
 
 # Internal AI tooling — NEVER should be in a published extension
   .harness/**
@@ -40,4 +41,3 @@ vsc-extension-quickstart.md
   **/*.map
   **/*.ts
   **/.vscode-test.*
-  
