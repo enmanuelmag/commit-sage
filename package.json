@@ -59,13 +59,15 @@
           "type": "string",
           "enum": [
             "openai",
-            "ollama"
+            "ollama",
+            "anthropic"
           ],
           "default": "openai"
         },
         "commitlint-sage.apiKey": {
           "type": "string",
           "default": "",
+          "secret": true,
           "description": "The API token for authenticating with your LLM host."
         },
         "commitlint-sage.amountPreviousCommits": {
@@ -107,7 +109,6 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@cardor/agent-harness-kit": "^1.7.2",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
     "@types/vscode": "^1.120.0",
