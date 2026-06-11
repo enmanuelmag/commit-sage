@@ -99,7 +99,6 @@ export function activate(context: vscode.ExtensionContext) {
 						repo.inputBox.value = message;
 						Logger.info(`Generated Commit Message: ${message}`);
 						Logger.info('Commit message set in input box.');
-						output.show();
 					}
 				} catch (error) {
 					ErrorHandler.handleError('An unexpected error occurred', error);
